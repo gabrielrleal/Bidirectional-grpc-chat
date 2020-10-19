@@ -1,0 +1,14 @@
+syntax = "proto3"; //Especifica a versão do proto
+ 
+package example; 
+ 
+service Chat { //Serviço que irá ser utilizado pelos clients
+    rpc join(stream Message) returns (stream Message){} //Recebe uma mensagem da stream e retorna a mesma mensagem da stream.
+    rpc send(Message) returns (Message){}// recebe uma mensagem e responde com outra mensagem.
+}
+ 
+message Message { //Informações que serão repassadas entre cliente e serviço´
+
+    string user = 1;
+    string text = 2;
+}

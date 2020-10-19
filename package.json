@@ -1,0 +1,19 @@
+{
+  "name": "grpc-chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --expose-http2 server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.1.7",
+    "@grpc/proto-loader": "^0.3.0",
+    "grpc": "^1.24.3",
+    "grpc-health-check": "^1.8.0",
+    "grpc-tools": "^1.9.1"
+  }
+}

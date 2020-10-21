@@ -7,8 +7,9 @@ service Chat { //Serviço que irá ser utilizado pelos clients
     rpc send(Message) returns (Message){}// recebe uma mensagem e responde com outra mensagem.
 }
  
+//utilizado para definir um novo tipo de mensagem.
 message Message { //Informações que serão repassadas entre cliente e serviço´
 
-    string user = 1;
+    string user = 1;//cada campo deve ser enumerado e este número é único por mensagem
     string text = 2;
 }

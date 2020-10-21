@@ -1,4 +1,6 @@
-//código feito com intuito de estudo tendo em como referencia o tutorial da https://techblog.fexcofts.com/
+//código feito com intuito de estudo tendo em como referencia o tutorial da
+//https://techblog.fexcofts.com/2018/07/20/grpc-nodejs-chat-example/  por TULIO CASTRO
+ 
 let grpc = require('grpc')
 var protoLoader = require('@grpc/proto-loader')
 var readline = require('readline')
